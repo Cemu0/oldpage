@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="">
         <meta name="author" content="Cemu0">
-        <link rel="icon"href="favoicon.gif">
+        <link rel="icon"href="/favoicon.gif">
         <title>Cemu0</title>
         <!-- Bootstrap core CSS -->
         <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet"/> 
@@ -14,63 +14,7 @@
         <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet" />
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
         <!-- Custom styles for this template -->
-        <!-- <link href="navbar.css" rel="stylesheet"> -->
-        <style>
-            .carousel{height:calc(100vh - 180px);}
-            .carousel-item video {width:100%;height:calc(100vh + 100px);object-fit:cover;}
-            .smart-scroll{
-                position: fixed;
-                top: 0;
-                right: 0;
-                left: 0;
-                z-index: 1030;
-            }
-            .scrolled-down{
-                transform:translateY(-100%); transition: all 0.3s ease-in-out;
-            }
-            .scrolled-up{
-                transform:translateY(0); transition: all 0.3s ease-in-out;
-            }
-            .elementToFadeInAndOut {
-                -webkit-animation: fadeinout 2s linear forwards;
-                animation: fadeinout 1s linear forwards;
-                animation-duration: 3s;
-                opacity: 0;
-            }
-
-            @-webkit-keyframes fadeinout {
-            50% { opacity: 1; }
-            }
-
-            @keyframes fadeinout {
-            50% { opacity: 1; }
-            }
-            .same_place{
-                position: absolute;
-                margin-left: auto;
-                margin-right: auto;
-                top:-30px;
-                left: 0;
-                right: 0;
-                text-align: center;
-            }
-            
-            a:hover {
-                color: rgb(110, 110, 110) !important;
-                text-decoration: none;
-                /* background-color: #343a40; */
-            }        
-            img:hover {
-                -moz-box-shadow: 0 0 20px #adadad;
-                -webkit-box-shadow: 0 0 20px #adadad;
-                box-shadow: 0 0 20px #adadad;
-            }     
-            .card-img-top{
-                height: 300px;
-                width:100%;
-                object-fit: cover;
-            }
-        </style>
+        <link href="/custom.css" rel="stylesheet">
     </head>
     <body class = "bg-light">
     <div>
@@ -150,7 +94,7 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-    <script src="scroll.js"></script>
+    <script src="/scroll.js"></script>
     <script src='https://cdn.rawgit.com/matthieua/WOW/1.0.1/dist/wow.min.js'></script>
     <script>
         new WOW().init();
