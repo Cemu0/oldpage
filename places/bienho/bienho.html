@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+        <meta name="author" content="Cemu0">
+        <link rel="icon"href="favoicon.gif">
+        <title>Cemu0</title>
+        <!-- Bootstrap core CSS -->
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet"/> 
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.1.0/css/flag-icon.min.css" rel="stylesheet"/>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
+        <!-- Custom styles for this template -->
+        <!-- <link href="navbar.css" rel="stylesheet"> -->
+        <style>
+            .carousel{height:calc(100vh - 180px);}
+            .carousel-item video {width:100%;height:calc(100vh + 100px);object-fit:cover;}
+            .smart-scroll{
+                position: fixed;
+                top: 0;
+                right: 0;
+                left: 0;
+                z-index: 1030;
+            }
+            .scrolled-down{
+                transform:translateY(-100%); transition: all 0.3s ease-in-out;
+            }
+            .scrolled-up{
+                transform:translateY(0); transition: all 0.3s ease-in-out;
+            }
+            .elementToFadeInAndOut {
+                -webkit-animation: fadeinout 2s linear forwards;
+                animation: fadeinout 1s linear forwards;
+                animation-duration: 3s;
+                opacity: 0;
+            }
+
+            @-webkit-keyframes fadeinout {
+            50% { opacity: 1; }
+            }
+
+            @keyframes fadeinout {
+            50% { opacity: 1; }
+            }
+            .same_place{
+                position: absolute;
+                margin-left: auto;
+                margin-right: auto;
+                top:-30px;
+                left: 0;
+                right: 0;
+                text-align: center;
+            }
+            
+            a:hover {
+                color: rgb(110, 110, 110) !important;
+                text-decoration: none;
+                /* background-color: #343a40; */
+            }        
+            img:hover {
+                -moz-box-shadow: 0 0 20px #adadad;
+                -webkit-box-shadow: 0 0 20px #adadad;
+                box-shadow: 0 0 20px #adadad;
+            }     
+            .card-img-top{
+                height: 300px;
+                width:100%;
+                object-fit: cover;
+            }
+        </style>
+    </head>
+    <body class = "bg-light">
+    <div>
+        <!-- thanks to https://forum.pinegrow.com/t/bootstrap-4-multilingual-site-menu/1720 -->
+        <nav class="navbar smart-scroll navbar-expand-lg navbar-dark bg-transparent">
+            <a class="navbar-brand" title="Cemu0 Pages" href="/">Cemu0's Pages</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample09" aria-controls="navbarsExample09" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarsExample09">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" title="Cemu0 Home page" href="/">Home</a>
+                    </li>
+
+                    <li class="nav-item dropdown active">
+                        <a class="nav-link dropdown-toggle" title="About Cemu0's" href="#" data-toggle="dropdown">About</a>
+                        <ul class="dropdown-menu border-0 bg-dark">
+                            <li><a class="dropdown-item text-white" title="Places Visited" href="/place.html"> My places</a></li>
+                            <li><a class="dropdown-item text-body" title="Cemu0's Projects" href="/work.html"> My works</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" title="Reason" href="/why.html">Why?</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav navbar-right">
+                    <li class="dropdown">
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown"><span class="flag-icon flag-icon-us"> </span> English</a>
+                        <div class="dropdown-menu border-0 bg-dark">
+                            <a class="dropdown-item text-white" href="/vn"><span class="flag-icon flag-icon-vn"> </span> Viet Nam </a>
+                        </div>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-md-0">
+                    <input class="form-control" type="text" placeholder="Quick GG Search" aria-label="Search">
+                </form>
+            </div>
+        </nav>
+    </div>
+    
+    <div class = "card text-hide carousel">
+        <div class="carousel-item active">
+              <video class="video-fluid" autoplay muted playsinline >
+                <source src="/places/bienho/bienhofromhigh.mp4" type="video/mp4" />
+                <source type="video/webm" src="/places/bienho/bienhofromhigh.webm" />
+            </video> 
+        </div>
+        
+        <div class="carousel-caption">
+          <h1 class="same_place elementToFadeInAndOut" style="animation-delay: 0s;">Biển Hồ - Pleiku</h1> 
+          <h1 class="same_place elementToFadeInAndOut" style="animation-delay: 2s;">The beach in the mountains</h1>
+          <!-- <h1 class="same_place animate__animated animate__fadeIn" style="animation-delay: 4s;">More Places</h1>
+          <h1 class="animate__animated animate__fadeIn" style="animation-delay: 5s;"><br>▽</h1> -->
+        </div>
+    </div>
+
+    <div style="height: 180px;" class="container-fluid"></div>
+
+    <div class="container-fluid text-light wow animate__animated animate__fadeIn text-center" data-wow-delay="0.4s" style="background-image: url(/places/bienho/DJI_0591.JPG);background-repeat: no-repeat;background-size: cover; ">
+        <h1 class="col-md-12 wow animate__animated animate__fadeIn text-center text-body" data-wow-delay="0.4s">Fresh Air</h1>
+
+        <div style="height: 400px; color: blanchedalmond;" class="row d-flex align-items-end">
+            <h2 class="col-md-12">Alway Ready <br> To be enjoy <br></h2>
+            <!--  -->
+            <!-- <h2 class="col-md-12"></h2> -->
+        </div>
+    </div>
+
+    <div class="container-fluid row d-flex align-items-end"></div>
+        <p style="margin: 0px;" class="col-md-12 text-center text-white bg-dark"> 2021 - @Cemu0</p>
+    </div>
+
+    <!-- Bootstrap core JavaScript
+         ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="scroll.js"></script>
+    <script src='https://cdn.rawgit.com/matthieua/WOW/1.0.1/dist/wow.min.js'></script>
+    <script>
+        new WOW().init();
+        //repeat
+        // window.addEventListener('scroll', function(e) {
+        //         if( $(window).scrollTop() <= 50) {
+        //             $('.wow').removeClass('animated');
+        //             $('.wow').removeAttr('style');
+        //             new WOW().init();
+        //         }
+        // });
+    </script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-9V4X5W70WY"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-9V4X5W70WY');
+    </script>
+    </body>
+</html>

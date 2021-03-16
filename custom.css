@@ -1,0 +1,54 @@
+.carousel{height:calc(100vh - 180px);}
+.fullscreenitem, .carousel-item video,.carousel-item img {width:100%;height:calc(100vh + 100px);object-fit:cover;}
+.smart-scroll{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+}
+.scrolled-down{
+    transform:translateY(-100%); transition: all 0.3s ease-in-out;
+}
+.scrolled-up{
+    transform:translateY(0); transition: all 0.3s ease-in-out;
+}
+.elementToFadeInAndOut {
+    -webkit-animation: fadeinout 2s linear forwards;
+    animation: fadeinout 1s linear forwards;
+    animation-duration: 3s;
+    opacity: 0;
+}
+
+@-webkit-keyframes fadeinout {
+50% { opacity: 1; }
+}
+
+@keyframes fadeinout {
+50% { opacity: 1; }
+}
+.same_place{
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    top:-30px;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+a:hover {
+    color: rgb(110, 110, 110) !important;
+    text-decoration: none;
+    /* background-color: #343a40; */
+}        
+img:hover {
+    -moz-box-shadow: 0 0 20px #adadad;
+    -webkit-box-shadow: 0 0 20px #adadad;
+    box-shadow: 0 0 20px #adadad;
+}     
+.card-img-top{
+    height: 300px;
+    width:100%;
+    object-fit: cover;
+}
